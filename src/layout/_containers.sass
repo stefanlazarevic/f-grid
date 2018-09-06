@@ -1,0 +1,13 @@
+.flex
+    display: flex
+
+.flex_container-fluid
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    width: 100%
+    +column-padding
+    +center-margin
+
+.flex_container
+    @extend .flex_container-fluid

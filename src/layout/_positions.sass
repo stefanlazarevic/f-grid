@@ -1,0 +1,37 @@
+=justify-on($media)
+    .flex_row
+        &.left-#{$media}
+            justify-content: flex-start
+        &.center-#{$media}
+            justify-content: center
+        &.right-#{$media}
+            justify-content: flex-end
+        &.top-#{$media}
+            align-content: flex-start
+        &.middle-#{$media}
+            align-content: center
+        &.bottom-#{$media}
+            align-content: flex-end
+    [class*='flex-']
+        &.left-#{$media}
+            align-items: flex-start
+        &.center-#{$media}
+            align-items: center
+        &.right-#{$media}
+            align-items: flex-end
+        &.top-#{$media}
+            justify-content: flex-start
+        &.middle-#{$media}
+            justify-content: center
+        &.bottom-#{$media}
+            justify-content: flex-end
+
+
+=align-on($media)
+    .flex_row
+
+=spacing-on($media)
+    .around-#{$media}
+        justify-content: space-around
+    .between-#{$media}
+        justify-content: space-between
