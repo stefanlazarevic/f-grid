@@ -1,5 +1,3 @@
-$max-columns: 12
-
 .flex-col
     display: flex
     flex-direction: column
@@ -18,13 +16,16 @@ $max-columns: 12
     .flex-lg-#{$col},
     .flex-xlg-#{$col}
         @extend .flex-col
-    .flex-#{$col}
-        flex: 0 0 percentage($column-size)
-        max-width: percentage($column-size)
+
 
 =generate-columns-on($media)
     @for $col from 1 through $max-columns
         $column-size: $col / $max-columns
-        .flex-#{$media}-#{$col}
-            flex: 0 0 percentage($column-size)
-            max-width: percentage($column-size)
+        @if $media
+            .flex-#{$media}-#{$col}
+                flex: 0 0 percentage($column-size)
+                max-width: percentage($column-size)
+        @else
+            .flex-#{$col}
+                flex: 0 0 percentage($column-size)
+                max-width: percentage($column-size)
