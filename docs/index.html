@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Layout Demo Page</title>
+    <link href="flexbox-layout.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Flexbox Layout</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat placeat illo officiis excepturi inventore voluptatum esse tempore velit provident! Obcaecati, magnam dolore eligendi dolor aliquid unde dignissimos esse veniam!</p>
+        </div>
+    </div>
+    <div class="main">
+        <h4>Basic</h4>
+        <div class="f-grid">
+            <div class="f-col-auto">
+                <div class="box">1</div>
+            </div>
+            <div class="f-col-auto">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col-auto">
+                <div class="box">3</div>
+            </div>
+        </div>
+
+        <h4>Reversed</h4>
+        <div class="f-grid f-dir-row-rev">
+            <div class="f-col-auto">
+                <div class="box">1</div>
+            </div>
+            <div class="f-col-auto">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col-auto">
+                <div class="box">3</div>
+            </div>
+        </div>
+
+        <h4>Stack</h4>
+        <div class="f-grid f-dir-col">
+            <div class="f-col">
+                <div class="box">1</div>
+            </div>
+            <div class="f-col">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col">
+                <div class="box">3</div>
+            </div>
+        </div>
+
+        <h4>Reversed Stack</h4>
+        <div class="f-grid f-dir-col-rev">
+            <div class="f-col">
+                <div class="box">1</div>
+            </div>
+            <div class="f-col">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col">
+                <div class="box">3</div>
+            </div>
+        </div>
+
+        <h4>F 12 Grid</h4>
+        <div class="f-grid">
+            <div class="f-col-4">
+                <div class="box">4</div>
+            </div>
+            <div class="f-col-8">
+                <div class="box">8</div>
+            </div>
+        </div>
+        <div class="f-grid">
+            <div class="f-col-4">
+                <div class="box">4</div>
+            </div>
+            <div class="f-col-2">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col-3">
+                <div class="box">3</div>
+            </div>
+            <div class="f-col-2">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col-1">
+                <div class="box">1</div>
+            </div>
+        </div>
+
+        <h4>Fixed width</h4>
+        <div class="f-grid">
+            <div class="f-col" style="width: 150px">
+                <div class="box">150px</div>
+            </div>
+            <div class="f-col-auto">
+                <div class="box">auto</div>
+            </div>
+        </div>
+
+        <h4>Responsive</h4>
+        <div class="f-grid">
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">f-col-12 / f-md-6 / f-lg-3</div>
+            </div>
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">f-col-12 / f-md-6 / f-lg-3</div>
+            </div>
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">f-col-12 / f-md-6 / f-lg-3</div>
+            </div>
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">f-col-12 / f-md-6 / f-lg-3</div>
+            </div>
+        </div>
+
+        <h4>Reverse stack on mobile</h4>
+        <div class="f-grid f-dir-col-rev f-sm-dir-row">
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">1</div>
+            </div>
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">2</div>
+            </div>
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">3</div>
+            </div>
+            <div class="f-col-12 f-md-col-6 f-lg-col-3">
+                <div class="box">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

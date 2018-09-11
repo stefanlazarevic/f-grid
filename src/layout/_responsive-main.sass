@@ -1,0 +1,63 @@
+/**
+ * Generate everything for mobile.
+ */
++generate-f-col-general-style
++f-dir-row-on(null)
++f-dir-col-on(null)
++f-justify-on(null)
++f-align-on(null)
++f-text-align-on(null)
++set-order-on(null)
++generate-f-col-width-on(null)
+
+/*
+ * Everything related to the tablet port media query.
+ */
++from-tablet-port
+    +f-dir-row-on($media-tablet-port-prefix)
+    +f-dir-col-on($media-tablet-port-prefix)
+    +f-justify-on($media-tablet-port-prefix)
+    +f-align-on($media-tablet-port-prefix)
+    +f-text-align-on($media-tablet-port-prefix)
+    +generate-f-col-width-on($media-tablet-port-prefix)
+    +set-order-on($media-tablet-port-prefix)
+    +set-grid-width-on-tablet-port
+
+/*
+ * Everything related to the tablet land media query.
+ */
++from-tablet-land
+    +f-dir-row-on($media-tablet-land-prefix)
+    +f-dir-col-on($media-tablet-land-prefix)
+    +f-justify-on($media-tablet-land-prefix)
+    +f-align-on($media-tablet-land-prefix)
+    +f-text-align-on($media-tablet-land-prefix)
+    +generate-f-col-width-on($media-tablet-land-prefix)
+    +set-order-on($media-tablet-land-prefix)
+    +set-grid-width-on-tablet-land
+
+/*
+ * Everything related to the laptop media query.
+ */
++from-laptop
+    +f-dir-row-on($media-laptop-prefix)
+    +f-dir-col-on($media-laptop-prefix)
+    +f-justify-on($media-laptop-prefix)
+    +f-align-on($media-laptop-prefix)
+    +f-text-align-on($media-laptop-prefix)
+    +generate-f-col-width-on($media-laptop-prefix)
+    +set-order-on($media-laptop-prefix)
+    +set-grid-width-on-laptop
+
+/*
+ * Everything related to the desktop media query.
+ */
++from-desktop
+    +f-dir-row-on($media-desktop-prefix)
+    +f-dir-col-on($media-desktop-prefix)
+    +f-justify-on($media-desktop-prefix)
+    +f-align-on($media-desktop-prefix)
+    +f-text-align-on($media-desktop-prefix)
+    +generate-f-col-width-on($media-desktop-prefix)
+    +set-order-on($media-desktop-prefix)
+    +set-grid-width-on-desktop

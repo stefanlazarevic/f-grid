@@ -1,0 +1,20 @@
+.f-grid
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto
+
+=set-grid-width-on-tablet-port
+    .f-grid
+        max-width: $media-tablet-port-container-width#{$dimension-unit}
+
+=set-grid-width-on-tablet-land
+    .f-grid
+        max-width: $media-tablet-land-container-width#{$dimension-unit}
+
+=set-grid-width-on-laptop
+    .f-grid
+        max-width: $media-laptop-container-width#{$dimension-unit}
+
+=set-grid-width-on-desktop
+    .f-grid
+        max-width: $media-desktop-container-width#{$dimension-unit}

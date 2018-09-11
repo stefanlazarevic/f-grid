@@ -1,0 +1,19 @@
+=f-align-on($media)
+    @if $media
+        .f-#{$media}-align-start
+            align-items: flex-start
+        .f-#{$media}-align-center
+            align-items: center
+        .f-#{$media}-align-end
+            align-items: flex-end
+        .f-#{$media}-align-stretch
+            align-items: stretch
+    @else
+        .f-align-start
+            align-items: flex-start
+        .f-align-center
+            align-items: center
+        .f-align-end
+            align-items: flex-end
+        .f-align-stretch
+            align-items: stretch

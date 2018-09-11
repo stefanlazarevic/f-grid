@@ -1,0 +1,27 @@
+=f-justify-on($media)
+    @if $media
+        .f-#{$media}-justify-start
+            justify-content: flex-start
+        .f-#{$media}-justify-center
+            justify-content: center
+        .f-#{$media}-justify-end
+            justify-content: flex-end
+        .f-#{$media}-justify-between
+            justify-content: space-between
+        .f-#{$media}-justify-around
+            justify-content: space-around
+        .f-#{$media}-justify-even
+            justify-content: space-evenly
+    @else
+        .f-justify-start
+            justify-content: flex-start
+        .f-justify-center
+            justify-content: center
+        .f-justify-end
+            justify-content: flex-end
+        .f-justify-between
+            justify-content: space-between
+        .f-justify-around
+            justify-content: space-around
+        .f-justify-even
+            justify-content: space-evenly

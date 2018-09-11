@@ -1,0 +1,11 @@
+=f-dir-row-on($media)
+    @if $media
+        .f-#{$media}-dir-row
+            flex-direction: row
+        .f-#{$media}-dir-row-rev
+            flex-direction: row-reverse
+    @else
+        .f-dir-row
+            flex-direction: row
+        .f-dir-row-rev
+            flex-direction: row-reverse

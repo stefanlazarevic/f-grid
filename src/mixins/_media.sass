@@ -1,23 +1,23 @@
 =on-phone-only
-    @media (max-width: 559px)
+    @media (max-width: ($media-tablet-port-from - 1) + $dimension-unit)
         @content
 
 // -sm
 =from-tablet-port
-    @media (min-width: 600px)
+    @media (min-width: $media-tablet-port-from + $dimension-unit)
         @content
 
 // -md
 =from-tablet-land
-    @media (min-width: 900px)
+    @media (min-width: $media-tablet-land-from + $dimension-unit)
         @content
 
 // -lg
 =from-laptop
-    @media (min-width: 1200px)
+    @media (min-width: $media-laptop-from + $dimension-unit)
         @content
 
 // -xlg
 =from-desktop
-    @media (min-width: 1800px)
+    @media (min-width: $media-desktop-from + $dimension-unit)
         @content

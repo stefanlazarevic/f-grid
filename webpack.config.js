@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
+    mode: 'production',
     watch: false,
     watchOptions: {
         aggregateTimeout: 500,

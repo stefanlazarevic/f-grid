@@ -1,1 +1,36 @@
+// Variables
 $max-columns: 12
+$dimension-unit: 'px'
+
+$media-tablet-port-prefix: 'sm'
+$media-tablet-land-prefix: 'md'
+$media-laptop-prefix: 'lg'
+$media-desktop-prefix: 'xlg'
+
+$media-tablet-port-from: 600
+$media-tablet-land-from: 900
+$media-laptop-from: 1200
+$media-desktop-from: 1800
+
+$media-tablet-port-container-width: 570
+$media-tablet-land-container-width: 770
+$media-laptop-container-width: 960
+$media-desktop-container-width: 1280
+
+// Unique classes *for extensions*
+.f
+    display: flex
+
+.f-col
+    flex: 0 0 auto
+    padding: 0 15px
+
+.f-col-auto
+    @extend .f-col
+    flex-grow: 1
+    flex-basis: 0
+
+*,
+*:before,
+*:after
+    box-sizing: border-box

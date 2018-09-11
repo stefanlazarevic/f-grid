@@ -1,0 +1,31 @@
+=f-dir-col-on($media)
+    @if $media
+        .f-#{$media}-dir-col
+            flex-direction: column
+        .f-#{$media}-dir-col-rev
+            flex-direction: column-reverse
+    @else
+        .f-dir-col
+            flex-direction: column
+        .f-dir-col-rev
+            flex-direction: column-reverse
+
+=generate-f-col-general-style
+    @for $col from 1 through $max-columns
+        $column-size: $col / $max-columns
+        .f-col-#{$col},
+        .f-#{$media-tablet-port-prefix}-col-#{$col},
+        .f-#{$media-tablet-land-prefix}-col-#{$col},
+        .f-#{$media-laptop-prefix}-col-#{$col},
+        .f-#{$media-desktop-prefix}-col-#{$col}
+            @extend .f-col
+
+=generate-f-col-width-on($media)
+    @for $col from 1 through $max-columns
+        $column-size: $col / $max-columns
+        @if $media
+            .f-#{$media}-col-#{$col}
+                width: percentage($column-size)
+        @else
+            .f-col-#{$col}
+                width: percentage($column-size)

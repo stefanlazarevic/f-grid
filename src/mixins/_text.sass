@@ -1,0 +1,19 @@
+=f-text-align-on($media)
+    @if $media
+        .f-#{$media}-text-left
+            text-align: left
+        .f-#{$media}-text-center
+            text-align: center
+        .f-#{$media}-text-right
+            text-align: right
+        .f-#{$media}-text-justify
+            text-align: justify
+    @else
+        .f-text-left
+            text-align: flex-start
+        .f-text-center
+            text-align: center
+        .f-text-right
+            text-align: flex-end
+        .f-text-justify
+            text-align: justify

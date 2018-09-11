@@ -1,0 +1,8 @@
+=set-order-on($media)
+    @for $col from 1 through 12
+        @if $media
+            .f-#{$media}-order-#{$col}
+                order: #{$col}
+        @else
+            .f-order-#{$col}
+                order: #{$col}
