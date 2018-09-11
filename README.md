@@ -1,4 +1,4 @@
-# Flexbox Layout
+# F-Grid
 
 Minimal grid system based on CSS3 Flexbox.
 
@@ -11,7 +11,9 @@ Minimal grid system based on CSS3 Flexbox.
 
 ### Todo tracklist
 
-- Comming soon.
+- Create documentation.
+- Create demo templates.
+- Test on older browsers that partially supports flexbox.
 
 ---
 

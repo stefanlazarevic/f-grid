@@ -1,5 +1,5 @@
 {
-  "name": "flexbox-layout",
+  "name": "f-grid",
   "version": "1.0.0",
   "description": "Grid layout system based on CSS flex.",
   "main": "index.js",
