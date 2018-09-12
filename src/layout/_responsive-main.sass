@@ -8,6 +8,8 @@
 +f-align-on(null)
 +f-text-align-on(null)
 +set-order-on(null)
++hide-on(null)
+// +show-on(null)
 +generate-f-col-width-on(null)
 
 /*
@@ -21,7 +23,10 @@
     +f-text-align-on($media-tablet-port-prefix)
     +generate-f-col-width-on($media-tablet-port-prefix)
     +set-order-on($media-tablet-port-prefix)
+    +hide-on($media-tablet-port-prefix)
+    // +show-on($media-tablet-port-prefix)
     +set-grid-width-on-tablet-port
+    +layers
 
 /*
  * Everything related to the tablet land media query.
@@ -34,6 +39,8 @@
     +f-text-align-on($media-tablet-land-prefix)
     +generate-f-col-width-on($media-tablet-land-prefix)
     +set-order-on($media-tablet-land-prefix)
+    +hide-on($media-tablet-land-prefix)
+    // +show-on($media-tablet-land-prefix)
     +set-grid-width-on-tablet-land
 
 /*
@@ -47,6 +54,8 @@
     +f-text-align-on($media-laptop-prefix)
     +generate-f-col-width-on($media-laptop-prefix)
     +set-order-on($media-laptop-prefix)
+    +hide-on($media-laptop-prefix)
+    // +show-on($media-laptop-prefix)
     +set-grid-width-on-laptop
 
 /*
@@ -60,4 +69,6 @@
     +f-text-align-on($media-desktop-prefix)
     +generate-f-col-width-on($media-desktop-prefix)
     +set-order-on($media-desktop-prefix)
+    +hide-on($media-desktop-prefix)
+    // +show-on($media-desktop-prefix)
     +set-grid-width-on-desktop

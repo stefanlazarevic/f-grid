@@ -1,0 +1,9 @@
+=show-on($media)
+    @if $media
+        +apply-on-inline-elements
+            &.f-#{$media}-show
+                display: inline-flex
+    @else
+        +apply-on-inline-elements
+            &.f-show
+                display: inline-flex
