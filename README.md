@@ -19,4 +19,4 @@ Minimal grid system based on CSS3 Flexbox.
 
 ### Known issues
 
-- None
+- not able to hide elements on specific viewport
